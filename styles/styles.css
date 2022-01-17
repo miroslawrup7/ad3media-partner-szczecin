@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4em;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 17px;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.sup {
+  vertical-align: super;
+  font-size: 0.7em;
+}
+
+.color {
+  color: rgb(0, 118, 70);
+}
+
+input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.wrapper section.quot-elements:last-child {
+  border-bottom: 0;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery {
+  margin: 25px;
+  line-height: 0;
+}
+
+.description {
+  margin: 25px 60px 25px 25px;
+}
+
+.description .subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 6px;
+}
+
+.description .parameters {
+  padding: 10px 5px;
+  background-color: rgb(0, 118, 70);
+  margin-bottom: 50px;
+}
+
+.description table {
+  width: 100%;
+  color: white;
+  border-collapse: collapse;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.description table td {
+  border-bottom: solid 2px rgb(4, 126, 76);
+  padding: 6px 12px;
+  min-width: 55%;
+}
+
+.description .min-price-wrapper .title {
+  margin-bottom: 0px;
+}
+
+.description .min-price {
+  font-size: 32px;
+}
+
+h1.title,
+h2.title {
+  font-size: 38px;
+  margin: 14px 0 24px 0;
+}
+
+.advertisement {
+  padding: 20px 0 50px 0;
+  border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.advertisement .title {
+  margin-bottom: 10px;
+}
+
+.quot-elements {
+  padding: 50px 0 50px 0;
+  border-bottom: 1px solid rgb(215, 215, 215);
+  display: flex;
+  flex-direction: row;
+}
+
+.quot-elements:first-child {
+  padding: 25px 0 0 0;
+}
+
+.quot-elements .title {
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+
+.quot-elements .calc {
+  margin-bottom: 30px;
+}
+
+.quot-elements .calc label {
+  line-height: 26px;
+  display: block;
+  margin-top: -26px;
+  margin-left: 44px;
+}
+
+.quot-elements .calc label.input-text {
+  margin-top: 10px;
+}
+
+.quot-elements .calc input[type="text"] {
+  font-family: "Barlow", sans-serif;
+  border: 1px solid rgb(172, 172, 172);
+  text-align: center;
+  padding: 7px;
+  width: 100px;
+  margin: 10px 0 10px 44px;
+  font-weight: 500;
+}
+
+.quot-elements .calc label {
+  font-weight: 600;
+}
+
+.quot-elements .calc .price {
+  font-weight: 400;
+  margin: 8px 0 0 44px;
+}
+
+.quot-elements .quot-elem-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+}
+
+.quot-elements .quot-row {
+  display: flex;
+  padding: 20px 5px;
+}
+
+.quot-elements:first-child .quot-row {
+  padding: 20px 5px 0 5px;
+}
+
+.quot-elements .quot-col {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  padding-right: 32px;
+}
+
+.quot-elem-imgs {
+  display: flex;
+  flex-direction: column;
+}
+
+.quot-elem-imgs img {
+  margin-bottom: 50px;
+}
+
+.quot-elem-imgs img:last-child {
+  margin-bottom: 0px;
+}
+
+.quotation {
+  margin-bottom: 70px;
+  height: 150px;
+  background-color: rgb(0, 118, 70);
+  color: white;
+  position: sticky;
+  bottom: 0;
+}
+
+.quot-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 100%;
+}
+
+.quot-title {
+  margin-left: 40px;
+}
+
+.quotation .title {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.quotation .subtitle {
+  margin-top: -8px;
+  font-weight: 600;
+}
+
+.quotation .quot-box {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  width: 212px;
+  text-align: center;
+  margin-left: 160px;
+}
+
+/* MEDIA */
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 900px;
+  }
+
+  .introduction {
+    flex-direction: column;
+  }
+
+  .gallery {
+    margin: 25px auto;
+  }
+
+  .description {
+    margin: 0px 60px 25px 0px;
+  }
+
+  .description .subtitle {
+    margin-top: 25px;
+  }
+
+  .description .parameters {
+    width: 70%;
+  }
+
+  .quot-elements {
+    flex-direction: column;
+  }
+
+  .quot-elem-img {
+    margin: 0 auto;
+  }
+
+  .quot-elem-imgs {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .quot-elem-imgs img {
+    margin-bottom: 0;
+    padding: 0 75px 0 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 700px;
+  }
+
+  .quot-elements {
+    padding: 20px 0 0 0;
+  }
+
+  .quot-elem-img {
+    display: none;
+  }
+
+  .quot-elem-imgs {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    max-width: 600px;
+  }
+
+  .advertisement .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 660px) {
+  .wrapper {
+    max-width: 90%;
+  }
+
+  .gallery {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .introduction img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .description .parameters {
+    width: 100%;
+  }
+
+  .quot-elements .quot-row {
+    flex-direction: column;
+  }
+
+  .quotation .quot-box {
+    margin-left: 15vw;
+  }
+
+  .quotation .quot-title {
+    margin-left: 0;
+  }
+}
